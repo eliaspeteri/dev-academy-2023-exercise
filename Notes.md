@@ -4,13 +4,16 @@
 
 |Frontend?|Backend|
 |-|-|
+|Github Pages| Github Pages|
 |TypeScript|TypeScript|
 |Node.js|Node.js|
+|Prettier|Prettier|
+|ESLint|ESLint|
 |Vite|express.js|
 |React|multer-js|
 |validatorjs|validatorjs|
 |Semantic UI React|mongoose|
-||MongoDB|
+|axios|MongoDB|
 ||Docker?|
 
 ## Data Import

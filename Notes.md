@@ -7,9 +7,9 @@
 |TypeScript|TypeScript|
 |Node.js|Node.js|
 |Vite|express.js|
-|Semantic UI React|multer-js|
+|React|multer-js|
 |validatorjs|validatorjs|
-||mongoose|
+|Semantic UI React|mongoose|
 ||MongoDB|
 ||Docker?|
 

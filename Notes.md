@@ -20,8 +20,7 @@ Data is in CSV-format and must be read into the backend in order to be served ou
 |Departure|Return|Departure station id|Departure station name|Return station id|Return station name|Covered distance (m)|Duration (sec.)|
 |-|-|-|-|-|-|-|-|
 |2021-05-31T23:57:25|2021-06-01T00:05:46|94|Laajalahden aukio|100|Teljäntie|2043|500|
-|2021-05-31T23:56:59|2021-06-01T00:07:14|82|Töölöntulli|113|Pasilan asema|1870|611
-|
+|2021-05-31T23:56:59|2021-06-01T00:07:14|82|Töölöntulli|113|Pasilan asema|1870|611|
 |...|...|...|...|...|...|...|...|
 
 1. Import data files with multer-js

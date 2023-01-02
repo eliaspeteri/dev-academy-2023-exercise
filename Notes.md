@@ -44,9 +44,42 @@ Journey type could look something like this:
 type Journey = {
     departureStation = string;
     returnStation = string;
-    distanceMeters = number;
+    distanceCoveredInMeters = number;
     durationSeconds = number;
 }
+```
+
+The related mongoose schema would look something like:
+
+```ts
+const journeySchema: Schema = new Schema <Journey>({
+    departureTime: {
+        type: Date,
+        required: true,
+    },
+    returnTime: {
+        type: Date,
+        required: true
+    },
+    departureStation: {
+        type: Schema.Types.ObjectId,
+        ref: 'Station',
+        required: true
+    },
+    returnStation: {
+        type: Schema.Types.ObjectId,
+        ref: 'Station',
+        required: true
+    },
+    distanceCoveredInMeters: {
+        type: Number,
+        required: true
+    },
+    durationSeconds: {
+        type: Number,
+        required: true
+    }
+})
 ```
 
 Pagination should be used on the frontend here (most likely an infinite scroller) and **especially** on the backend.
@@ -87,11 +120,41 @@ Thus, the type for a single station could look something like this:
 
 ```ts
 type Station = {
+    stationId = number;
     stationName = string;
     stationAddress = string;
-    totalNumberOfDepartures = number;
-    totalNumberOfReturns = number;
+    departingJourneys = [Journey];
+    returningJourneys = [Journey];
 }
+```
+
+Related mongoose schema would look something like this:
+
+```ts
+const stationSchema: Schema = new Schema<Station>({
+    stationId: {
+        type: Number,
+        required: true
+    },
+    stationName: {
+        type: String,
+        required: true
+    },
+    stationAddress: {
+        type: String,
+        required: true
+    },
+    departingJourneys: {
+        type: [Schema.Types.ObjectId],
+        ref: 'Journey',
+        required: true
+    },
+    returningJourneys: {
+        type: [Schema.Types.ObjectId],
+        ref: 'Journey',
+        required: true
+    }
+})
 ```
 
 ### Additional features for single station view

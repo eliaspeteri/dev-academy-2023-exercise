@@ -26,6 +26,9 @@
   * [ ] /journeys/[journey]
   * [ ] /upload
 * [ ] Add support for pagination query parameters (?limit, ?page etc)
+* [ ] Write mongoose schemas
+  * [ ] Journey schema
+  * [ ] Station schema
 * [ ] Implement basic validationjs code (check if file exists, if file is not empty etc)
 * [ ] Implement file handling code with multer
 

@@ -35,11 +35,19 @@
   * [x] Prettier
   * [x] TypeScript
   * [x] validatorjs
-* [ ] Implement basic API routes
-  * [ ] /stations
+* [-] Implement basic API routes
+  * [-] /stations
+    * [x] Controller
+    * [ ] Service
   * [ ] /stations/[station]
+    * [ ] Controller
+    * [ ] Service
   * [ ] /journeys
+    * [ ] Controller
+    * [ ] Service
   * [ ] /journeys/[journey]
+    * [ ] Controller
+    * [ ] Service
   * [ ] /upload
 * [ ] Add support for pagination query parameters (?limit, ?page etc)
 * [ ] Write mongoose schemas

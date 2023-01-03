@@ -1,6 +1,6 @@
 export type Journey = {
-  departureStation: string;
-  returnStation: string;
+  departureStationId: string;
+  returnStationId: string;
   distanceCoveredInMeters: number;
   durationSeconds: number;
 };

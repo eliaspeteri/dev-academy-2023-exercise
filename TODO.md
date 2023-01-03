@@ -15,6 +15,7 @@
     * [ ] List
     * [ ] List header
     * [ ] List item
+    * [ ] Search input
 
 ## Backend
 
@@ -34,7 +35,7 @@
 
 ## Common
 
-* [ ] Write types
+* [ ] Write types (see notes for boilerplates)
   * [ ] Journey
   * [ ] Station
 

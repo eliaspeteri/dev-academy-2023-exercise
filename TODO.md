@@ -2,7 +2,7 @@
 
 ## Frontend
 
-* [ ] Scaffold the Next.js project
+* [x] Scaffold the Next.js project
 * [ ] Implement basic UI pages with Semantic UI React
   * [ ] Homepage
   * [ ] Journeys list view

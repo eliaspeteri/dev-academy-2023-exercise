@@ -1,0 +1,40 @@
+{
+  "name": "dev-academy-2023-exercise-server",
+  "version": "1.0.0",
+  "description": "This is the pre-assignment for Solita Dev Academy Finland 2023. But if you’re here just purely out of curiosity, feel free to snatch the idea and make your own city bike app just for the fun of it!",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node dist/index.js",
+    "compile": "tsc",
+    "build": "npm run compile",
+    "test": "cross-env NODE_ENV=test ts-node-dev ./index.ts",
+    "dev": "cross-env NODE_ENV=development ts-node-dev ./index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eliaspeteri/dev-academy-2023-exercise.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eliaspeteri/dev-academy-2023-exercise/issues"
+  },
+  "homepage": "https://github.com/eliaspeteri/dev-academy-2023-exercise#readme",
+  "devDependencies": {
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.15",
+    "@types/node": "^18.11.18",
+    "ts-node-dev": "^2.0.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.8.2",
+    "multer-js": "^1.4.3",
+    "validatorjs": "^3.22.1"
+  }
+}

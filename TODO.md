@@ -3,6 +3,13 @@
 ## Frontend
 
 * [x] Scaffold the Next.js project
+* [-] Install planned dependencies
+  * [ ] axios
+  * [ ] ESLint
+  * [ ] Prettier
+  * [ ] Semantic UI React
+  * [x] TypeScript
+  * [ ] validatorjs
 * [ ] Implement basic UI pages with Semantic UI React
   * [ ] Homepage
   * [ ] Journeys list view
@@ -19,7 +26,15 @@
 
 ## Backend
 
-* [ ] Scaffold the Express.js project
+* [x] Scaffold the Express.js project
+* [-] Install planned dependencies
+  * [ ] ESLint
+  * [x] express.js
+  * [x] mongoose
+  * [ ] multer-js
+  * [ ] Prettier
+  * [x] TypeScript
+  * [ ] validatorjs
 * [ ] Implement basic API routes
   * [ ] /stations
   * [ ] /stations/[station]

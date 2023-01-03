@@ -17,10 +17,6 @@ const stationSchema: Schema = new Schema<IStation>({
     type: String,
     required: true
   },
-  stationAddress: {
-    type: String,
-    required: true
-  },
   departingJourneys: {
     type: [Schema.Types.ObjectId],
     ref: 'Journey',

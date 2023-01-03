@@ -1,14 +1,15 @@
 export type Journey = {
-  departureStationId: string;
-  returnStationId: string;
+  departureStationId: number;
+  returnStationId: number;
+  departureStationName: string;
+  returnStationName: string;
   distanceCoveredInMeters: number;
   durationSeconds: number;
+  departureTime: string;
+  returnTime: string;
 };
 
 export type Station = {
   stationId: number;
   stationName: string;
-  stationAddress: string;
-  departingJourneys: [Journey?];
-  returningJourneys: [Journey?];
 };

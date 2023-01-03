@@ -1,7 +1,7 @@
 import bodyParser from 'body-parser';
 import cors from 'cors';
 import express, { Application } from 'express';
-import mongoose from 'mongoose';
+// TODO import mongoose from 'mongoose';
 // TODO import { Config, logger } from './utils'
 // TODO import journeyController from './controllers/journey'
 // TODO import stationController from './controllers/station'

@@ -4,7 +4,6 @@
 
 |Frontend?|Backend|
 |-|-|
-|Github Pages| Github Pages|
 |TypeScript|TypeScript|
 |Node.js|Node.js|
 |Prettier|Prettier|

@@ -44,17 +44,17 @@
     * [ ] Service
   * [-] /journeys
     * [x] Controller
-    * [ ] Service
+    * [-] Service
   * [ ] /journeys/[journey]
     * [ ] Controller
     * [ ] Service
-  * [ ] /upload
+  * [-] /upload
 * [ ] Add support for pagination query parameters (?limit, ?page etc)
 * [x] Write mongoose schemas
   * [x] Journey schema
   * [x] Station schema
 * [ ] Implement basic validationjs code (check if file exists, if file is not empty etc)
-* [ ] Implement file handling code with multer
+* [x] Implement file handling code with multer
 
 ## Common
 

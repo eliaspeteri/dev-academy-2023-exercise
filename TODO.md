@@ -50,9 +50,9 @@
     * [ ] Service
   * [ ] /upload
 * [ ] Add support for pagination query parameters (?limit, ?page etc)
-* [ ] Write mongoose schemas
-  * [ ] Journey schema
-  * [ ] Station schema
+* [x] Write mongoose schemas
+  * [x] Journey schema
+  * [x] Station schema
 * [ ] Implement basic validationjs code (check if file exists, if file is not empty etc)
 * [ ] Implement file handling code with multer
 

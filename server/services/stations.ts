@@ -1,9 +1,8 @@
 import { Station } from 'bike-app-common';
-// TODO import StationModel from '../models/station';
+import StationModel from '../models/station';
 
 const getAll = async (): Promise<Station[] | null> => {
-  return [];
-  // TODO StationModel.find({});
+  return StationModel.find({});
 };
 const StationService = { getAll };
 

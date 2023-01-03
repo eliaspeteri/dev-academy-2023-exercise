@@ -1,9 +1,8 @@
 import { Journey } from 'bike-app-common';
-// TODO import JourneyModel from '../models/journey';
+import JourneyModel from '../models/journey';
 
 const getAll = async (): Promise<Journey[] | null> => {
-  return [];
-  // TODO JourneyModel.find({});
+  return JourneyModel.find({});
 };
 const JourneyService = { getAll };
 

@@ -38,7 +38,7 @@
 * [-] Implement basic API routes
   * [-] /stations
     * [x] Controller
-    * [ ] Service
+    * [-] Service
   * [ ] /stations/[station]
     * [ ] Controller
     * [ ] Service

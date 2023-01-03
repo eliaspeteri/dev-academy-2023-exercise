@@ -58,9 +58,9 @@
 
 ## Common
 
-* [ ] Write types (see notes for boilerplates)
-  * [ ] Journey
-  * [ ] Station
+* [x] Write types (see notes for boilerplates)
+  * [x] Journey
+  * [x] Station
 
 ## Production
 

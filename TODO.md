@@ -27,14 +27,14 @@
 ## Backend
 
 * [x] Scaffold the Express.js project
-* [-] Install planned dependencies
-  * [ ] ESLint
+* [x] Install planned dependencies
+  * [x] ESLint
   * [x] express.js
   * [x] mongoose
-  * [ ] multer-js
-  * [ ] Prettier
+  * [x] multer-js
+  * [x] Prettier
   * [x] TypeScript
-  * [ ] validatorjs
+  * [x] validatorjs
 * [ ] Implement basic API routes
   * [ ] /stations
   * [ ] /stations/[station]

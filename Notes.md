@@ -81,6 +81,61 @@ const journeySchema: Schema = new Schema <Journey>({
 })
 ```
 
+It would make sense to use bucket pattern here. Thus the journeys could be bundled by date to bring the count of documents down. The schema for it would look something like this:
+
+```ts
+interface JourneyBucket extends Document {
+  startDate: Date;
+  endDate: Date;
+  journeys: [Journey];
+}
+
+const journeyBucketSchema: Schema = new Schema<JourneyBucket>({
+  startDate: {
+    type: Date,
+    required: true
+  },
+  endDate: {
+    type: Date,
+    required: true
+  },
+  journeys: [
+    {
+      departureTime: {
+        type: Date,
+        required: true
+      },
+      returnTime: {
+        type: Date,
+        required: true
+      },
+      departureStation: {
+        type: Schema.Types.ObjectId,
+        ref: 'Station',
+        required: true
+      },
+      returnStation: {
+        type: Schema.Types.ObjectId,
+        ref: 'Station',
+        required: true
+      },
+      distanceCoveredInMeters: {
+        type: Number,
+        required: true
+      },
+      durationSeconds: {
+        type: Number,
+        required: true
+      }
+    }
+  ]
+});
+```
+
+The problem with a bucket pattern is that being grouped by date means some users would pick up a bike, say, 23:59, ride it over midnight and then return it. This entry would either be recorded in two buckets (as user departed on one date and arrived on another) or it may be lost to the ether and not recorded at all.
+
+_Alternatively_ the data could be posted to the database as normal but the database itself would have Time-Series collection which is ideal for timestamped measurements. The problem here is identifying a good way to store the data. Time-Series collection only accepts one timestamped so we should pick between using the departure or the return time.
+
 Pagination should be used on the frontend here (most likely an infinite scroller) and **especially** on the backend.
 
 ### Additional features for journey list view

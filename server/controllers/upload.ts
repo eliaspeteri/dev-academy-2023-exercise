@@ -18,7 +18,7 @@ controller.post(
     try {
       res.json({
         success: true,
-        data: await UploadService.saveMany(req.file?.buffer.toString())
+        data: await UploadService.uploadMany(req.file?.buffer.toString())
       });
     } catch (error) {
       if (error instanceof multer.MulterError) {

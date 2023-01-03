@@ -9,7 +9,7 @@
 |Prettier|Prettier|
 |ESLint|ESLint|
 |Next.js|express.js|
-|React|multer-js|
+|React|multer|
 |validatorjs|validatorjs|
 |Semantic UI React|mongoose|
 |axios|MongoDB|

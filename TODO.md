@@ -31,7 +31,7 @@
   * [x] ESLint
   * [x] express.js
   * [x] mongoose
-  * [x] multer-js
+  * [x] multer
   * [x] Prettier
   * [x] TypeScript
   * [x] validatorjs

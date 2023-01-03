@@ -4,7 +4,8 @@
   "description": "This is the pre-assignment for Solita Dev Academy Finland 2023. But if you’re here just purely out of curiosity, feel free to snatch the idea and make your own city bike app just for the fun of it!",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=production node dist/index.js",
+    "start": "npm run start:server",
+    "start:server": "cross-env NODE_ENV=production node dist/index.js",
     "compile": "tsc",
     "build": "npm run compile",
     "test": "cross-env NODE_ENV=test ts-node-dev ./index.ts",

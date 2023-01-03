@@ -42,8 +42,8 @@
   * [ ] /stations/[station]
     * [ ] Controller
     * [ ] Service
-  * [ ] /journeys
-    * [ ] Controller
+  * [-] /journeys
+    * [x] Controller
     * [ ] Service
   * [ ] /journeys/[journey]
     * [ ] Controller

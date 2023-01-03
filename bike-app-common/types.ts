@@ -9,6 +9,6 @@ export type Station = {
   stationId: number;
   stationName: string;
   stationAddress: string;
-  departingJourneys: [Journey];
-  returningJourneys: [Journey];
+  departingJourneys: [Journey?];
+  returningJourneys: [Journey?];
 };

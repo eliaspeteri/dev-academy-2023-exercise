@@ -1,12 +1,13 @@
 import { NextFunction, Request, Response } from 'express';
 
-import { info } from './logger';
+import { info, table } from './logger';
 
 const requestLogger = (req: Request, _res: Response, next: NextFunction) => {
   info(`Method: ${req.method}`);
   info(`Path: ${req.path}`);
-  info(`Body: ${req.body}`);
-  info(`Headers: ${req.headers}`);
+  table(`Body: ${req.body}`);
+  table(req.headers);
+  table(req.query);
   info('---');
   next();
 };

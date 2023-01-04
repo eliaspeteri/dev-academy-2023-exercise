@@ -1,11 +1,23 @@
 import { Journey } from 'bike-app-common';
-import JourneyModel from '../models/journey';
 import JourneyBucket from '../models/journeyBucket';
 import { logger } from '../utils';
 import StationService from './stations';
 
+type Filter = {
+  startDate?: Date;
+  endDate?: Date;
+};
+
 const getAll = async (): Promise<Journey[] | null> => {
-  return JourneyModel.find({});
+  return JourneyBucket.find({});
+};
+
+const getFilteredByDate = async (filter: Filter) => {
+  logger.info({ filter });
+  return JourneyBucket.find({
+    startDate: { $gte: filter.startDate },
+    endDate: { $lt: filter.endDate }
+  });
 };
 
 const saveMany = async (fileDataParsed: Journey[] | undefined) => {
@@ -47,6 +59,6 @@ const saveMany = async (fileDataParsed: Journey[] | undefined) => {
     });
 };
 
-const JourneyService = { getAll, saveMany };
+const JourneyService = { getAll, getFilteredByDate, saveMany };
 
 export default JourneyService;

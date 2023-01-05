@@ -16,23 +16,23 @@ controller.post(
   upload.single('file'),
   async (req: Request, res: Response) => {
     try {
-      res.json({
+      return res.status(200).json({
         success: true,
-        data: await UploadService.uploadMany(req.file?.buffer.toString())
+        data: await UploadService.uploadOne(req.file?.buffer.toString())
       });
     } catch (error) {
+      logger.error((error as any).message);
       if (error instanceof multer.MulterError) {
-        res.status(400).json({
+        return res.status(400).json({
           success: false,
           message: (error as any).message
         });
       } else {
-        res.status(500).json({
+        return res.status(500).json({
           success: false,
           message: (error as any).message
         });
       }
-      logger.error((error as any).message);
     }
   }
 );

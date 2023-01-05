@@ -40,7 +40,6 @@
     * [x] Controller
     * [-] Service
       * [x] GET all
-      * [ ] GET one
       * [x] POST one
   * [ ] /stations/[station]
     * [ ] Controller
@@ -49,7 +48,6 @@
     * [x] Controller
     * [-] Service
       * [x] GET all
-      * [ ] GET one
       * [ ] POST one
       * [x] POST many
   * [ ] /journeys/[journey]
